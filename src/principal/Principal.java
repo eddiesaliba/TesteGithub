@@ -18,6 +18,7 @@ public class Principal {
 			System.out.println("2 - subtração");
 			System.out.println("3 - multiplicação");
 			System.out.println("4 - divisão");
+			System.out.println("5 - potenciação X^Y");
 			System.out.println("Opção: ");
 			op = sc.nextInt();
 			
@@ -76,6 +77,20 @@ public class Principal {
 					calc.setVal1(v1);
 					calc.setVal2(v2);
 					res = calc.divisao();
+					
+					System.out.println("Resultado: " + res);		
+					break;
+				case 5:
+					System.out.println("--[ Potenciação ]--");
+					System.out.println("Digite o valor da base");
+					v1 = sc.nextFloat();
+					System.out.println("Digite o valor expoente");
+					v2 = sc.nextFloat();
+					
+					calc.setVal1(v1);
+					calc.setVal2(v2);
+					calc.potenciacao();
+					res = calc.getTotal();
 					
 					System.out.println("Resultado: " + res);		
 			}
