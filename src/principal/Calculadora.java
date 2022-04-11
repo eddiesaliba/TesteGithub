@@ -35,6 +35,10 @@ public class Calculadora {
 			return 0;
 	}
 	
+	public void potenciacao() {
+		total = (float) Math.pow(val1, val2);
+	}
+	
 	public void setVal1(float a) {
 		val1 = a;
 	}
